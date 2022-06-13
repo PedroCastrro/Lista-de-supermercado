@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de supermercado</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="App de Cadastro de Super Mercado">
+        <meta name="author" content="Pedro Castro">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <h2>App Lista de Super Mercado</h2>
+        </header>
+        <div class="lista-cadastro">
+            <input type="text" placeholder="nome do produto..."
+            name="nome_produto" />
+            <input type="number" placeholder="Valor do produto..." name="price" step="0.01"
+            title="Este deve ser um número com até 2 casas decimais.">
+            <input type="submit" name="acao" value="Cadastrar" />
+        </div>
+
+        <div class="lista-produtos"></div><!--Lista-produtos-->
+
+        <div class="soma-produto">
+            <h1>Total: R$0</h1>
+        </div><!--soma-->
+        
+        <div class="center">
+            <button name="limpar">Limpar</button>
+        </div><!--buttom-limpar-->    
+        <script src="supermercado.js"></script>
+    </body>
+</html>
